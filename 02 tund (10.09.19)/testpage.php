@@ -6,7 +6,14 @@
   
   if($hourNow < 8){
 	  $partOfDay = "hommik";
-
+  if($hourNow > 8 and $hourNow < 12)
+	  $partOfDay = "hiline hommik";
+  if($hourNow > 12 and $hourNow < 18)
+	  $partOfDay = "päev";
+  if($hourNow > 18 and $hourNow < 23.59)
+	  $partOfDay = "õhtu";
+  if($hourNow > 23.59 and $hourNow < 8)
+	  $partOfDay = "öö";
   }	  
 ?>
 
