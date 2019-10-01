@@ -7,7 +7,7 @@
   $fullTimeNow = date("d.m.Y H:i:s");
   $hourNow = date("H");
   $partOfDay = "hägune aeg";
-  
+ 
   if($hourNow < 8){
 	  $partOfDay = "hommik";
   }
@@ -22,7 +22,7 @@
   }
   if($hourNow > 23.59 and $hourNow < 8){
 	  $partOfDay = "öö";
-  }	  
+  }	    
   
   //info semestri kulgemise kohta
   $semesterStart = new DateTime("2019-9-2");
