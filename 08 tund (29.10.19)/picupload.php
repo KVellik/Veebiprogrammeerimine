@@ -80,13 +80,13 @@
 			//teeme pildi väiksemaks
 			//loeme pildifaili sisu pikslikogumiks ehk "pildiobjektiks"
 			if($imageFileType == "jpg" or $imageFileType == "jpeg"){
-				$myTempImage = imagecreatefromjpeg($_FILES["fileToUpload"]["name"]);				
+				$myTempImage = imagecreatefromjpeg($_FILES["fileToUpload"]["tmp_name"]);				
 			}
 			if($imageFileType == "png"){
-				$myTempImage = imagecreatefrompng($_FILES["fileToUpload"]["name"]);				
+				$myTempImage = imagecreatefrompng($_FILES["fileToUpload"]["tmp_name"]);				
 			}
 			if($imageFileType == "gif"){
-				$myTempImage = imagecreatefromgif($_FILES["fileToUpload"]["name"]);			
+				$myTempImage = imagecreatefromgif($_FILES["fileToUpload"]["tmp_name"]);			
 			}
 			
 			$imageW = imagesx($myTempImage);
