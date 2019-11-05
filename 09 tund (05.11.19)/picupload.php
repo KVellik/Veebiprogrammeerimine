@@ -105,6 +105,9 @@
 			} else {
 				echo "Sorry, there was an error uploading your file.";
 			}
+			
+			//salvestan info andmebaasi
+			$notice .= addPicData($filename, test_input($_POST["altText"]), $_POST["privacy"]);
 		}
 	
 	}//kas nuppu klikiti
